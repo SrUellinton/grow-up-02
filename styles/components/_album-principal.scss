@@ -7,6 +7,9 @@
     width: 250px;
     height: 250px;
     border-radius: 10px;
+    border-radius: 16px;
+    border: 1px solid $cor-primaria;
+    box-shadow: 0px 8px 4px 0px #00000040;
   }
   #img-artista {
     border-radius: 50%;
@@ -25,6 +28,17 @@
   }
   p {
     margin-top: 5px;
-    color: $cor-primaria;
+    color: $off-white;
+  }
+  .info-album{
+    display: flex;
+    align-items: center;
+    #img-artista{
+      margin-right: 1rem;
+    }
+    .material-symbols-outlined{
+      padding: 0.5rem;
+      font-size: 12px;
+    }
   }
 }
