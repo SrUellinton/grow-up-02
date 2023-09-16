@@ -72,6 +72,7 @@ td {
 }
 
 body {
+  background: linear-gradient(180deg, #000000fc 0%, $cor-tercearia 100%);
   line-height: 1;
 }
 
@@ -97,6 +98,20 @@ q:after {
 html,
 body {
   font-family: $fonte-primaria;
+}
+
+h1, h2, h3 {
+  color: $off-white;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: $tamanho-do-texto;
+}
+
+p {
+  margin-top: 5px;
+  color: $off-white;
 }
 
 .material-symbols-outlined {

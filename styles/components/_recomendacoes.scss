@@ -1,150 +1,91 @@
-.recomendaes {
-    width: 1427px;
-    height: 897px;
+.recomendacoes {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.2fr repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #2c2828 0%, #00000000 100%);
+  margin: 3rem;
+  padding: 2rem;
+
+  h2 {
+    margin-bottom: 1rem;
   }
-  
-  .recomendaes .overlap-group {
-    position: relative;
-    height: 876px;
-    border-radius: 16px;
-    background: linear-gradient(180deg, rgb(44, 40, 40) 0%, rgba(0, 0, 0, 0) 100%);
+  .album-recomendacao {
+    .img-album-recomendacao {
+      width: 224px;
+      height: 224px;
+      border-radius: 10px;
+      flex-shrink: 1;
+    }
+    .titulo {
+      font-size: 20px;
+      font-weight: 500;
+      padding-bottom: 0.5rem;
+    }
   }
-  
-  .recomendaes .album-recomendao {
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
-    top: 139px;
-    left: 765px;
+  .titulo{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
-  
-  .recomendaes .album-cover {
-    position: relative;
-    width: 224px;
-    height: 224px;
-    object-fit: cover;
+  .item-1{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
-  
-  .recomendaes .nome-album {
-    position: relative;
-    width: 224px;
-    font-family: "Roboto-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+  .item-2{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
-  
-  .recomendaes .artista {
-    position: relative;
-    width: 224px;
-    font-family: "Roboto-Regular", Helvetica;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: normal;
+  .item-3{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
-  
-  .recomendaes .div {
-    top: 528px;
-    left: 765px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
+  .item-4{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
-  
-  .recomendaes .album-recomendao-2 {
-    top: 139px;
-    left: 1118px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
+  .item-5{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
-  
-  .recomendaes .album-recomendao-3 {
-    top: 528px;
-    left: 1118px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
+  .item-6{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
-  
-  .recomendaes .album-recomendao-4 {
-    top: 139px;
-    left: 412px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
+  .item-7{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
-  
-  .recomendaes .album-recomendao-5 {
-    top: 528px;
-    left: 412px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
+  .item-8{
+    // grid-area: 1 / 1 / 2 / 2;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
-  
-  .recomendaes .album-recomendao-6 {
-    top: 139px;
-    left: 59px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
-  }
-  
-  .recomendaes .album-recomendao-7 {
-    top: 528px;
-    left: 59px;
-    display: flex;
-    flex-direction: column;
-    width: 224px;
-    height: 312px;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: absolute;
-  }
-  
-  .recomendaes .text-wrapper {
-    position: absolute;
-    top: 54px;
-    left: 59px;
-    font-family: "Roboto-Bold", Helvetica;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 32px;
-    letter-spacing: 0;
-    line-height: normal;
-    white-space: nowrap;
-  }
-  
+}

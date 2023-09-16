@@ -1,11 +1,32 @@
 .musica{
   display: flex;
-  margin: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 10px;
   background-color: $cor-secundaria;
+  .ordem-titulo-musica,  
+  .acoes-minutagem-musica{
+    display: flex;
+    align-items: center;
+  }
+  .artista-feat{
+    font-size: calc($tamanho-do-texto/4);
+  }
+  .ordem{
+    padding: 0 1rem ;
+    font-weight: 900;
+  }
+  .titulo-musica{
+    text-transform: uppercase !important;
+  }
   .acoes-musica{
     display: flex;
+    margin-top: 5px;
+    margin-right: 1rem;
     .link{
       padding: 5px;
       text-decoration: none;
@@ -15,5 +36,8 @@
         border-radius: 50%;
       }
     }
+  }
+  .minutagem{
+    font-weight: 700;
   }
 }
